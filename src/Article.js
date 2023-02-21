@@ -22,9 +22,7 @@ function Article() {
     setisLoading(true);
     const fetchNews = () => {
       console.log(query);
-      fetch(
-        `https://main--preeminent-pastelito-f8227d.netlify.app/api/search?query=${query}&page=${currentPage}`
-      )
+      fetch(`/api/search?query=${query}&page=${currentPage}`)
         .then((res) => res.json())
         .then((json) => {
           console.log(json);

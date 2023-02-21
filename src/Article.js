@@ -22,7 +22,7 @@ function Article() {
     setisLoading(true);
     const fetchNews = () => {
       console.log(query);
-      fetch(`/api/v1/search?query=${query}&page=${currentPage}`)
+      fetch(`api/api/v1/search?query=${query}&page=${currentPage}`)
         .then((res) => res.json())
         .then((json) => {
           console.log(json);

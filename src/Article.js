@@ -22,7 +22,9 @@ function Article() {
     setisLoading(true);
     const fetchNews = () => {
       console.log(query);
-      fetch(`/search?query=${query}&page=${currentPage}`)
+      fetch(
+        `http://hn.algolia.com/api/v1/search?query=${query}&page=${currentPage}`
+      )
         .then((res) => res.json())
         .then((json) => {
           console.log(json);

@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import ReactPaginate from "react-paginate";
 import ReactPlaceholder from "react-placeholder";
 import "react-placeholder/lib/reactPlaceholder.css";
+import Pagination from "react-bootstrap/Pagination";
 
 function Article() {
   const [currentPage, setCurrentPage] = useState(0);
@@ -110,8 +111,8 @@ function Article() {
       )}
 
       <ReactPaginate
-        nextLabel=">>"
-        previousLabel="<<"
+        nextLabel=">"
+        previousLabel="<"
         breakLabel="..."
         forcePage={currentPage}
         pageCount={totalPages}

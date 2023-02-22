@@ -25,3 +25,25 @@ li{
   text-align: left;
   list-style: none;
 }
+
+.pagination{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  cursor: pointer;
+}
+
+.pagination a {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #2776fd;
+  color: #2776fd !important;
+  text-decoration: none;
+}
+
+.active-page a {
+  color: #fff !important;
+  background: #2776fd;
+}
+

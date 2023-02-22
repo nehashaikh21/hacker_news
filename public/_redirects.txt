@@ -1,1 +1,0 @@
-/api/* http://hn.algolia.com/api/v1/`:splat 200

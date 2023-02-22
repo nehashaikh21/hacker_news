@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/https://main--preeminent-pastelito-f8227d.netlify.app/search/*"
+  from = "http://hn.algolia.com/api/v1/*"
   to = "http://hn.algolia.com/api/v1:splat"
   status = 200
   force = true
